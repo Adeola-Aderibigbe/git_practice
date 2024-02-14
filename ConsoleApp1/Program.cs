@@ -10,12 +10,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            double epsilon = 0.000001;
+            float epsilon = 0.000001f;
 
             Console.WriteLine("Enter the first real number");
-            double number1 = double.Parse(Console.ReadLine());
+            float number1 = float.Parse(Console.ReadLine());
             Console.WriteLine("Enter the second real number:");
-            double number2 = double.Parse(Console.ReadLine());
+            float number2 = float.Parse(Console.ReadLine());
             if (Math.Abs(number1 - number2) < epsilon)
             {
                 Console.WriteLine("The two numbers are considered equal within the specified accuracy.");
